@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>cari mobil</title>
+
+  <!-- BOOTSTRAP -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="../css/style.css">
+
+  <!-- owl carousel -->
+  <link rel="stylesheet" href="../owl_carousel/owl.carousel.css">
+  <link rel="stylesheet" href="../owl_carousel/owl.theme.default.css">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="../fontawesome-free-6.2.0-web/css/all.css">
+</head>
+
+<body>
+  <!-- Navbar Started Section -->
+  <header class="sticky-top">
+    <nav class="navbar navbar-expand-lg navbar-light py-3" aria-label="Offcanvas navbar large">
+      <div class="container-xxl">
+        <a class="navbar-brand" href="#">
+          <img src="../assets/logo.png" alt="logo">
+        </a>
+        <a class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar2"
+          aria-controls="offcanvasNavbar2">
+          <span class="navbar-toggler-icon"></span>
+        </a>
+        <div class="offcanvas w-50 offcanvas-end text-bg-white" tabindex="-1" id="offcanvasNavbar2"
+          aria-labelledby="offcanvasNavbar2Label">
+          <div class="offcanvas-header" data-bs-dismiss="offcanvas">
+            <a href="#" class="nav-link">
+              <h1 class="ps-2 pt-2 fw-bold">BCR</h1>
+            </a>
+            <button type="button" class="btn-close btn-close-dark" data-bs-dismiss="offcanvas"
+              aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-end flex-grow-1 ps-2 gap-md-4 gap-2 fw-bold">
+              <li class="nav-item" data-bs-dismiss="offcanvas">
+                <a class="nav-link" aria-current="page" href="#our-services-section">Our Service</a>
+              </li>
+              <li class="nav-item" data-bs-dismiss="offcanvas">
+                <a class="nav-link" aria-current="page" href="#why-us-section">Why Us</a>
+              </li>
+              <li class="nav-item" data-bs-dismiss="offcanvas">
+                <a class="nav-link" aria-current="page" href="#testimonial-section">Testimonial</a>
+              </li>
+              <li class="nav-item" data-bs-dismiss="offcanvas">
+                <a class="nav-link" aria-current="page" href="#FAQ-section">FAQ</a>
+              </li>
+              <div>
+                <button class="btn btn-green rounded-1" data-bs-dismiss="offcanvas">Register</button>
+              </div>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <!-- Navbar end Section -->
+
+
+
+  <section id="get-started-section" class="bd-masthead">
+    <div class="container-fluid">
+      <div class="row gap-md-5">
+        <div class="col-md-4 me-5 container">
+          <h1 class="mb-4 fw-bold">Sewa & Rental Mobil Terbaik di kawasan (Lokasimu)</h1>
+          <p class="mb-4 col-11">Selamat datang di Binar Car Rental. Kami menyediakan mobil kualitas terbaik dengan
+            harga
+            terjangkau. Selalu siap melayani kebutuhanmu untuk sewa mobil selama 24 jam.</p>
+        </div>
+        <div class="col-md-6 p-0">
+          <img src="../assets/Mercedes-Car.png" class="img-fluid img-car" alt="Mercedes">
+        </div>
+      </div>
+    </div>
+
+    <!-- <button id="load-btn">Load</button> -->
+    <!-- <button id="clear-btn">Clear</button> -->
+    <!-- <div id="cars-container"></div> -->
+  </section>
+
+  <section class="container p-5 ">
+    <div class="container bg-body shadow-sm rounded-3 mb-5 position-relative" style="margin-top: -105px">
+      <div class="card-filter d-flex pb-4 pt-4 px-4 justify-content-between" style="font-size: 14px">
+        <div class="">
+          <label for="" class="form-label">Tipe Driver</label>
+          <input type="tipe-driver" class="form-control" id="tipe-driver" aria-describedby="emailHelp">
+        </div>
+        <div class="" id="datepicker">
+          <label for="" class="form-label">Tanggal</label>
+          <input type="tanggal" class="form-control" id="tanggal" aria-describedby="date">
+        </div>
+        <div class="">
+          <label for="" class="form-label">Waktu Jemput/Ambil</label>
+          <input type="waktu-jemput" class="form-control" id="waktu-jemput" aria-describedby="emailHelp">
+        </div>
+        <div class="">
+          <label for="" class="form-label">Jumlah Penumpang (optional)</label>
+          <input type="jumlah-penumpang" class="form-control" id="jumlah-penumpang" aria-describedby="emailHelp">
+        </div>
+        <div class="d-flex align-items-end gap-2">
+          <button id="clear-btn" class="btn btn-danger rounded-1 fw-normal px-3"
+            data-bs-dismiss="offcanvas">Hapus</button>
+          <button id="load-btn" class="btn btn-green rounded-1 fw-normal px-3" data-bs-dismiss="offcanvas">Cari
+            mobil</button>
+        </div>
+      </div>
+    </div>
+    <div class="container text-center">
+      <div id="cars-container" class="row row-cols-4 justify-content-between g-4">
+        
+      </div>
+    </div>
+
+
+  </section>
+
+
+  <footer>
+    <div class="container">
+      <footer class="py-5">
+        <div class="row">
+          <div class="col-md-3">
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2">
+                <p>Jalan Suroyo No. 161 Mayangan Kota Probolonggo 672000</p>
+              </li>
+              <li class="nav-item mb-2">
+                <p>binarcarrental@gmail.com</p>
+              </li>
+              <li class="nav-item mb-2">
+                <p>081-233-334-808</p>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-2 ps-md-5">
+            <ul class="nav flex-column gap-2">
+              <li class="nav-item mb-2"><a href="#services" class="nav-link p-0 text-dark fw-semibold">Our services</a>
+              </li>
+              <li class="nav-item mb-2"><a href="#why-us" class="nav-link p-0 text-dark fw-semibold">Why Us</a></li>
+              <li class="nav-item mb-2"><a href="#testimonial"
+                  class="nav-link p-0 text-dark fw-semibold">Testimonial</a></li>
+              <li class="nav-item mb-2"><a href="#FAQ" class="nav-link p-0 text-dark fw-semibold">FAQ</a></li>
+            </ul>
+          </div>
+
+          <div class="col-md-4">
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2">
+                <p>Connect with us</p>
+              </li>
+              <li class="nav-item mb-2 d-flex gap-3">
+                <a href="#"><img src="../assets/icon_facebook.png" alt="facebook" style="max-width: 2.2rem"></a>
+                <a href="#"><img src="../assets/icon_instagram.png" alt="instagram" style="max-width: 2.2rem"></a>
+                <a href="#"><img src="../assets/icon_twitter.png" alt="twitter" style="max-width: 2.2rem"></a>
+                <a href="#"><img src="../assets/icon_mail.png" alt="mail" style="max-width: 2.2rem"></a>
+                <a href="#"><img src="../assets/icon_twitch.png" alt="twitch" style="max-width: 2.2rem"></a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-md-3">
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2">
+                <p>Copyright Binar 2022</p>
+              </li>
+              <a href="#"><img src="../assets/logo.png" alt="logo"></a>
+            </ul>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </footer>
+
+  <!-- JavaScript Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+    crossorigin="anonymous"></script>
+
+  <!-- jquery -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+    integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <!-- owl carousel -->
+  <script src="../owl_carousel/owl.carousel.js"></script>
+  <script src="../scripts/script.js"></script>
+  <!-- Example Javascript -->
+  <script type="text/javascript" src="./scripts/binar.js"></script>
+  <script type="text/javascript" src="./scripts/app.example.js"></script>
+  <script type="text/javascript" src="./scripts/car.example.js"></script>
+  <script type="text/javascript" src="./scripts/main.example.js"></script>
+</body>
+
+</html>
