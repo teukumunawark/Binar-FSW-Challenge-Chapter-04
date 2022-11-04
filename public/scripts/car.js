@@ -38,17 +38,19 @@ class Car {
     this.specs = specs;
     this.availableAt = availableAt;
   }
+  
+
 
   render() {
     return `
     <div class="card" style="width: 18rem; height: 600px;">
-    <img src="${this.image}" class="card-img-top" style="height: 220px; display: block;"
+    <img src="${this.image}" class="bg-img card-img-top" style="height: 200px; object-fit: cover;"
       alt="${this.id}">
     <div class="card-body text-start px-3 d-flex flex-column">
       <p class="card-text fw-normal">${this.model} / ${this.type}</p>
-      <p class="card-text fw-bold">Rp 430.000 / hari</p>
+      <p class="card-text fw-bold">Rp ${this.rentPerDay} / hari</p>
       <p class="card-text fw-light">${this.description}</p>
-      <p class="card-text"><i class="fa-solid fa-user me-3"></i>4 orang</p>
+      <p class="card-text"><i class="fa-solid fa-user me-3"></i>${this.capacity} orang</p>
       <p class="card-text"><i class="fa-solid fa-gear me-3"></i>${this.transmission}</p>
       <p class="card-text"><i class="fa-solid fa-calendar-days me-3"></i>Tahun ${this.year}</p>
       <div class="mt-auto">
